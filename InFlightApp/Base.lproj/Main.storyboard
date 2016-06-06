@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Krb-Sn-BNv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -12,212 +13,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lnd-uc-KhX">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="101"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <attributedString key="attributedText">
+                                <fragment content="5 Minute In-Flight Workout ">
+                                    <attributes>
+                                        <font key="NSFont" size="40" name="HelveticaNeue-Thin"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KpF-u8-Pq0">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="70" id="K3M-ko-Bi8">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KpF-u8-Pq0" id="PuX-Jm-kNl">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K3M-ko-Bi8" id="XRL-hG-hMi">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Leg-lifts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Al-8D-mdH">
-                                            <rect key="frame" x="68" y="14" width="89" height="36"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Leg-lifts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-FV-tO9">
+                                            <rect key="frame" x="68" y="13" width="89" height="36"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiD-dj-Vor">
-                                            <rect key="frame" x="18" y="21" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-Mi-O0D">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="69.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="YiD-dj-Vor" secondAttribute="centerY" id="59P-9m-aNm"/>
-                                        <constraint firstAttribute="centerY" secondItem="YiD-dj-Vor" secondAttribute="centerY" id="9tt-QO-n2j"/>
-                                        <constraint firstAttribute="centerY" secondItem="5Al-8D-mdH" secondAttribute="centerY" id="Er4-yM-ibr"/>
-                                        <constraint firstAttribute="centerY" secondItem="5Al-8D-mdH" secondAttribute="centerY" id="ouX-rC-Nbp"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="F3b-b6-Dab">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F3b-b6-Dab" id="e2R-UF-0Qe">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="2." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqh-KA-Hl0">
-                                            <rect key="frame" x="18" y="21" width="42" height="29"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Feet circles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1R-n3-mMK">
-                                            <rect key="frame" x="68" y="14" width="113" height="36"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="Yqh-KA-Hl0" secondAttribute="centerY" id="2G5-03-GIL"/>
-                                        <constraint firstAttribute="centerY" secondItem="u1R-n3-mMK" secondAttribute="centerY" id="GWA-nV-mGQ"/>
-                                        <constraint firstAttribute="centerY" secondItem="Yqh-KA-Hl0" secondAttribute="centerY" id="ukp-DT-AyR"/>
-                                        <constraint firstAttribute="centerY" secondItem="u1R-n3-mMK" secondAttribute="centerY" id="vp8-cb-wJY"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="BoG-Rb-10z">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BoG-Rb-10z" id="egy-Bb-tuH">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="3." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEC-Rx-krL">
-                                            <rect key="frame" x="18" y="21" width="42" height="29"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Crossover lift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="874-F1-mzt">
-                                            <rect key="frame" x="68" y="14" width="129" height="36"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="oEC-Rx-krL" secondAttribute="centerY" id="Qet-7Z-L64"/>
-                                        <constraint firstAttribute="centerY" secondItem="oEC-Rx-krL" secondAttribute="centerY" id="bAk-BV-xAf"/>
-                                        <constraint firstAttribute="centerY" secondItem="874-F1-mzt" secondAttribute="centerY" id="fpg-76-5Tr"/>
-                                        <constraint firstAttribute="centerY" secondItem="874-F1-mzt" secondAttribute="centerY" id="mA1-yD-fpH"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="7fT-Rj-VOW">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7fT-Rj-VOW" id="RzN-dl-oQk">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="4." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfN-ja-lhD">
-                                            <rect key="frame" x="18" y="21" width="42" height="29"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Fist stand" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6w-5k-JDV">
-                                            <rect key="frame" x="68" y="14" width="113" height="36"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="K6w-5k-JDV" secondAttribute="centerY" id="DnN-dr-rJo"/>
-                                        <constraint firstAttribute="centerY" secondItem="VfN-ja-lhD" secondAttribute="centerY" id="KCW-kG-G1K"/>
-                                        <constraint firstAttribute="centerY" secondItem="VfN-ja-lhD" secondAttribute="centerY" id="ndc-oA-AH2"/>
-                                        <constraint firstAttribute="centerY" secondItem="K6w-5k-JDV" secondAttribute="centerY" id="ut8-Yr-eDb"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="NSX-ID-xt1">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NSX-ID-xt1" id="p7p-BI-ljr">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="5." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBs-ll-Hwk">
-                                            <rect key="frame" x="18" y="21" width="42" height="29"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Fist stand pulses" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUP-OZ-YEh">
-                                            <rect key="frame" x="68" y="14" width="169" height="36"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="jBs-ll-Hwk" secondAttribute="centerY" id="A4g-XW-5TD"/>
-                                        <constraint firstAttribute="centerY" secondItem="jBs-ll-Hwk" secondAttribute="centerY" id="Acb-91-beB"/>
-                                        <constraint firstAttribute="centerY" secondItem="fUP-OZ-YEh" secondAttribute="centerY" id="LEI-eS-d2F"/>
-                                        <constraint firstAttribute="centerY" secondItem="fUP-OZ-YEh" secondAttribute="centerY" id="fVY-1J-lEK"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="GdC-iJ-Q0B">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GdC-iJ-Q0B" id="yJG-eK-OUK">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="6." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feQ-NM-M03">
-                                            <rect key="frame" x="18" y="21" width="42" height="29"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tri-lift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wG-3n-kMi">
-                                            <rect key="frame" x="68" y="14" width="113" height="36"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="feQ-NM-M03" secondAttribute="centerY" id="3Ts-uN-fxs"/>
-                                        <constraint firstAttribute="centerY" secondItem="8wG-3n-kMi" secondAttribute="centerY" id="KYI-7r-V7G"/>
-                                        <constraint firstAttribute="centerY" secondItem="feQ-NM-M03" secondAttribute="centerY" id="Mtg-d6-UdD"/>
-                                        <constraint firstAttribute="centerY" secondItem="8wG-3n-kMi" secondAttribute="centerY" id="wM8-yo-qDR"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="7w3-aD-gSM">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7w3-aD-gSM" id="zw0-O3-nCd">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="7." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22I-9p-xJc">
-                                            <rect key="frame" x="18" y="21" width="42" height="29"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Harder tri-lift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFE-A3-3t3">
-                                            <rect key="frame" x="68" y="14" width="120" height="36"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="GFE-A3-3t3" secondAttribute="centerY" id="1F3-oA-0G5"/>
-                                        <constraint firstAttribute="centerY" secondItem="22I-9p-xJc" secondAttribute="centerY" id="8W5-lu-iyd"/>
-                                        <constraint firstAttribute="centerY" secondItem="GFE-A3-3t3" secondAttribute="centerY" id="Jbk-mp-Yt7"/>
-                                        <constraint firstAttribute="centerY" secondItem="22I-9p-xJc" secondAttribute="centerY" id="ur7-OG-Sp8"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="i7a-xM-OAZ">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i7a-xM-OAZ" id="ZFc-ZO-Tcp">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="8." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp8-Uh-Dcu">
-                                            <rect key="frame" x="18" y="21" width="42" height="29"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Neck circles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG4-Ba-ikX">
-                                            <rect key="frame" x="68" y="14" width="123" height="36"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="Yp8-Uh-Dcu" secondAttribute="centerY" id="No9-aA-HV2"/>
-                                        <constraint firstAttribute="centerY" secondItem="dG4-Ba-ikX" secondAttribute="centerY" id="RMH-u5-8LT"/>
-                                        <constraint firstAttribute="centerY" secondItem="Yp8-Uh-Dcu" secondAttribute="centerY" id="nme-yS-KCr"/>
-                                        <constraint firstAttribute="centerY" secondItem="dG4-Ba-ikX" secondAttribute="centerY" id="qNO-zF-jnR"/>
+                                        <constraint firstAttribute="centerY" secondItem="MB3-Mi-O0D" secondAttribute="centerY" id="BH2-ar-D2l"/>
+                                        <constraint firstItem="MB3-Mi-O0D" firstAttribute="top" secondItem="XRL-hG-hMi" secondAttribute="topMargin" constant="24" id="EA3-Cc-tjr"/>
+                                        <constraint firstAttribute="centerY" secondItem="MB3-Mi-O0D" secondAttribute="centerY" id="Lhu-rI-wTa"/>
+                                        <constraint firstAttribute="centerY" secondItem="ndf-FV-tO9" secondAttribute="centerY" id="Niz-dR-ICU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="MB3-Mi-O0D" secondAttribute="bottom" constant="24" id="Zlg-kK-Pco"/>
+                                        <constraint firstAttribute="centerY" secondItem="ndf-FV-tO9" secondAttribute="centerY" id="apO-pX-dDt"/>
+                                        <constraint firstItem="MB3-Mi-O0D" firstAttribute="leading" secondItem="XRL-hG-hMi" secondAttribute="leadingMargin" constant="25" id="suL-h6-YnY"/>
+                                        <constraint firstAttribute="centerY" secondItem="ndf-FV-tO9" secondAttribute="centerY" id="w2e-kp-MbA"/>
+                                        <constraint firstAttribute="centerY" secondItem="MB3-Mi-O0D" secondAttribute="centerY" id="yxe-AV-j8V"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
