@@ -13,6 +13,9 @@
 		0CF57A541CFF255200FE4BEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF57A531CFF255200FE4BEB /* Images.xcassets */; };
 		0CF57A571CFF255200FE4BEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF57A551CFF255200FE4BEB /* LaunchScreen.xib */; };
 		0CF57A631CFF255200FE4BEB /* InFlightAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF57A621CFF255200FE4BEB /* InFlightAppTests.swift */; };
+		0CF57A9D1D05563800FE4BEB /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF57A9C1D05563800FE4BEB /* WorkoutCell.swift */; };
+		0CF57A9F1D05680D00FE4BEB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF57A9E1D05680D00FE4BEB /* DetailViewController.swift */; };
+		0CF57AA11D06A2C800FE4BEB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF57AA01D06A2C800FE4BEB /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		0CF57A5C1CFF255200FE4BEB /* InFlightAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InFlightAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF57A611CFF255200FE4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CF57A621CFF255200FE4BEB /* InFlightAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InFlightAppTests.swift; sourceTree = "<group>"; };
+		0CF57A9C1D05563800FE4BEB /* WorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutCell.swift; path = InFlightApp/WorkoutCell.swift; sourceTree = "<group>"; };
+		0CF57A9E1D05680D00FE4BEB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0CF57AA01D06A2C800FE4BEB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		0CF57A3E1CFF255200FE4BEB = {
 			isa = PBXGroup;
 			children = (
+				0CF57A9C1D05563800FE4BEB /* WorkoutCell.swift */,
 				0CF57A491CFF255200FE4BEB /* InFlightApp */,
 				0CF57A5F1CFF255200FE4BEB /* InFlightAppTests */,
 				0CF57A481CFF255200FE4BEB /* Products */,
@@ -80,6 +87,8 @@
 				0CF57A4C1CFF255200FE4BEB /* AppDelegate.swift */,
 				0CF57A4E1CFF255200FE4BEB /* ViewController.swift */,
 				0CF57A501CFF255200FE4BEB /* Main.storyboard */,
+				0CF57AA01D06A2C800FE4BEB /* MainViewController.swift */,
+				0CF57A9E1D05680D00FE4BEB /* DetailViewController.swift */,
 				0CF57A531CFF255200FE4BEB /* Images.xcassets */,
 				0CF57A551CFF255200FE4BEB /* LaunchScreen.xib */,
 				0CF57A4A1CFF255200FE4BEB /* Supporting Files */,
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF57A9D1D05563800FE4BEB /* WorkoutCell.swift in Sources */,
 				0CF57A4F1CFF255200FE4BEB /* ViewController.swift in Sources */,
 				0CF57A4D1CFF255200FE4BEB /* AppDelegate.swift in Sources */,
+				0CF57A9F1D05680D00FE4BEB /* DetailViewController.swift in Sources */,
+				0CF57AA11D06A2C800FE4BEB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				0CF57A681CFF255200FE4BEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CF57A691CFF255200FE4BEB /* Build configuration list for PBXNativeTarget "InFlightAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				0CF57A6B1CFF255200FE4BEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,55 +8,60 @@
         <!--View Controller-->
         <scene sceneID="YAn-HS-saE">
             <objects>
-                <tableViewController title="View Controller" clearsSelectionOnViewWillAppear="NO" id="Krb-Sn-BNv" sceneMemberID="viewController">
+                <tableViewController title="View Controller" clearsSelectionOnViewWillAppear="NO" id="Krb-Sn-BNv" customClass="MainViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="O41-DT-w2p">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lnd-uc-KhX">
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Minute In-Flight Workout " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lnd-uc-KhX">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="101"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <attributedString key="attributedText">
-                                <fragment content="5 Minute In-Flight Workout ">
-                                    <attributes>
-                                        <font key="NSFont" size="40" name="HelveticaNeue-Thin"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="70" id="K3M-ko-Bi8">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="70" id="K3M-ko-Bi8" customClass="WorkoutCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K3M-ko-Bi8" id="XRL-hG-hMi">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Leg-lifts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-FV-tO9">
-                                            <rect key="frame" x="68" y="13" width="89" height="36"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-Mi-O0D">
                                             <rect key="frame" x="0.0" y="0.0" width="60" height="69.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Leg-lifts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-FV-tO9">
+                                            <rect key="frame" x="122" y="17" width="89" height="36"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view alpha="0.14999999999999999" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-hi-mIi">
+                                            <rect key="frame" x="0.0" y="0.0" width="66" height="69.5"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4Jm-hi-mIi" secondAttribute="bottom" id="0k5-c2-C1K"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="4Jm-hi-mIi" secondAttribute="trailing" constant="23" id="8Hd-Cb-dBz"/>
                                         <constraint firstAttribute="centerY" secondItem="MB3-Mi-O0D" secondAttribute="centerY" id="BH2-ar-D2l"/>
                                         <constraint firstItem="MB3-Mi-O0D" firstAttribute="top" secondItem="XRL-hG-hMi" secondAttribute="topMargin" constant="24" id="EA3-Cc-tjr"/>
                                         <constraint firstAttribute="centerY" secondItem="MB3-Mi-O0D" secondAttribute="centerY" id="Lhu-rI-wTa"/>
                                         <constraint firstAttribute="centerY" secondItem="ndf-FV-tO9" secondAttribute="centerY" id="Niz-dR-ICU"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="MB3-Mi-O0D" secondAttribute="bottom" constant="24" id="Zlg-kK-Pco"/>
                                         <constraint firstAttribute="centerY" secondItem="ndf-FV-tO9" secondAttribute="centerY" id="apO-pX-dDt"/>
+                                        <constraint firstItem="4Jm-hi-mIi" firstAttribute="leading" secondItem="XRL-hG-hMi" secondAttribute="leadingMargin" id="bn3-tO-hK1"/>
+                                        <constraint firstItem="4Jm-hi-mIi" firstAttribute="top" secondItem="XRL-hG-hMi" secondAttribute="topMargin" id="iLx-9a-MSW"/>
                                         <constraint firstItem="MB3-Mi-O0D" firstAttribute="leading" secondItem="XRL-hG-hMi" secondAttribute="leadingMargin" constant="25" id="suL-h6-YnY"/>
                                         <constraint firstAttribute="centerY" secondItem="ndf-FV-tO9" secondAttribute="centerY" id="w2e-kp-MbA"/>
                                         <constraint firstAttribute="centerY" secondItem="MB3-Mi-O0D" secondAttribute="centerY" id="yxe-AV-j8V"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="count" destination="MB3-Mi-O0D" id="DNJ-gg-31Y"/>
+                                    <outlet property="textCellLabel" destination="ndf-FV-tO9" id="tK1-dP-X39"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -76,10 +81,50 @@
                             </fragment>
                         </attributedString>
                     </refreshControl>
+                    <connections>
+                        <segue destination="hbF-xi-Mbq" kind="modal" identifier="detailView" id="HUk-PL-YlI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJa-Db-04M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="289"/>
+            <point key="canvasLocation" x="-41" y="262"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="zKH-Un-VYe">
+            <objects>
+                <viewController id="wet-Uf-Nf1" customClass="DetailViewController" customModule="InFlightApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="88P-3M-Yh5"/>
+                        <viewControllerLayoutGuide type="bottom" id="jTn-gz-Ypp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mJJ-nb-zub">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="127-61-aLr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5e-Xb-g6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="253"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xm5-eS-XhK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbF-xi-Mbq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m4u-xc-spu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wet-Uf-Nf1" kind="relationship" relationship="rootViewController" id="3uF-33-vee"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQ7-hR-Jlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="253"/>
         </scene>
     </scenes>
 </document>
