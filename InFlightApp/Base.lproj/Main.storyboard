@@ -9,7 +9,7 @@
         <scene sceneID="YAn-HS-saE">
             <objects>
                 <tableViewController title="View Controller" clearsSelectionOnViewWillAppear="NO" id="Krb-Sn-BNv" customClass="MainViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="O41-DT-w2p">
+                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="299" id="O41-DT-w2p">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -19,6 +19,21 @@
                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view key="tableFooterView" alpha="0.14999999999999999" contentMode="scaleToFill" id="ZxI-xB-vXT">
+                            <rect key="frame" x="0.0" y="519.5" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpF-uO-X5E">
+                                    <rect key="frame" x="8" y="1" width="343" height="41"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                    <state key="normal" title="Start Workout">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="70" id="K3M-ko-Bi8" customClass="WorkoutCell">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -31,16 +46,16 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view alpha="0.14999999999999999" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-hi-mIi">
+                                            <rect key="frame" x="0.0" y="0.0" width="66" height="69.5"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Leg-lifts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-FV-tO9">
                                             <rect key="frame" x="122" y="17" width="89" height="36"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view alpha="0.14999999999999999" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-hi-mIi">
-                                            <rect key="frame" x="0.0" y="0.0" width="66" height="69.5"/>
-                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="4Jm-hi-mIi" secondAttribute="bottom" id="0k5-c2-C1K"/>
@@ -82,7 +97,8 @@
                         </attributedString>
                     </refreshControl>
                     <connections>
-                        <segue destination="hbF-xi-Mbq" kind="modal" identifier="detailView" id="HUk-PL-YlI"/>
+                        <outlet property="tableView" destination="O41-DT-w2p" id="tRS-Xe-VzM"/>
+                        <segue destination="hbF-xi-Mbq" kind="presentation" identifier="detailView" id="HUk-PL-YlI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJa-Db-04M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5e-Xb-g6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1621" y="253"/>
+            <point key="canvasLocation" x="1621" y="252.99999999999997"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xm5-eS-XhK">
@@ -124,7 +140,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQ7-hR-Jlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="253"/>
+            <point key="canvasLocation" x="809" y="252.99999999999997"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aNz-1b-dta">
+            <objects>
+                <viewController id="aUz-xX-dtm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HfN-jz-xH3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Muo-g0-OSu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BJA-sL-d36">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UfT-dK-Nrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="922.99999999999989"/>
         </scene>
     </scenes>
 </document>

@@ -8,11 +8,13 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController , UITableViewDelegate {
 
+    @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.delegate = self
+       // self.tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
